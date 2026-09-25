@@ -20,6 +20,13 @@ import {
   PiGridFourDuotone,
   PiBookBookmarkDuotone,
   PiImageDuotone,
+  PiShieldCheckDuotone,
+  PiTerminalWindowDuotone,
+  PiBrainDuotone,
+  PiChartLineUpDuotone,
+  PiDatabaseDuotone,
+  PiCertificateDuotone,
+  PiTrophyDuotone,
 } from "react-icons/pi";
 
 import {
@@ -27,11 +34,37 @@ import {
   SiNextdotjs,
   SiFigma,
   SiSupabase,
+  SiPython,
+  SiDocker,
+  SiKubernetes,
+  SiMongodb,
+  SiFirebase,
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiNodedotjs,
+  SiPostman,
+  SiMysql,
+  SiPowers,
 } from "react-icons/si";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
+import {
+  FaDiscord,
+  FaGithub,
+  FaLinkedin,
+  FaX,
+  FaThreads,
+  FaInstagram,
+  FaXTwitter,
+  FaFacebook,
+  FaPinterest,
+  FaWhatsapp,
+  FaReddit,
+  FaTelegram,
+} from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
+  // General
   arrowUpRight: HiArrowUpRight,
   arrowRight: HiArrowRight,
   email: HiEnvelope,
@@ -43,28 +76,62 @@ export const iconLibrary: Record<string, IconType> = {
   calendar: HiCalendarDays,
   home: PiHouseDuotone,
   gallery: PiImageDuotone,
-  discord: FaDiscord,
   eye: HiOutlineEye,
   eyeOff: HiOutlineEyeSlash,
+  document: HiOutlineDocument,
+  rocket: HiOutlineRocketLaunch,
+  arrowUpRightFromSquare: HiArrowTopRightOnSquare,
+  shield: PiShieldCheckDuotone,
+  terminal: PiTerminalWindowDuotone,
+  brain: PiBrainDuotone,
+  chart: PiChartLineUpDuotone,
+  database: PiDatabaseDuotone,
+  certificate: PiCertificateDuotone,
+  trophy: PiTrophyDuotone,
+
+  // Social
+  discord: FaDiscord,
   github: FaGithub,
   linkedin: FaLinkedin,
   x: FaX,
   twitter: FaXTwitter,
   threads: FaThreads,
-  arrowUpRightFromSquare: HiArrowTopRightOnSquare,
-  document: HiOutlineDocument,
-  rocket: HiOutlineRocketLaunch,
-  javascript: SiJavascript,
-  nextjs: SiNextdotjs,
-  supabase: SiSupabase,
-  figma: SiFigma,
   facebook: FaFacebook,
   pinterest: FaPinterest,
   whatsapp: FaWhatsapp,
   reddit: FaReddit,
   telegram: FaTelegram,
   instagram: FaInstagram,
+
+  // Frontend / Web
+  javascript: SiJavascript,
+  html: SiHtml5,
+  css: SiCss3,
+  react: SiReact,
+  nextjs: SiNextdotjs,
+
+  // Backend / Database
+  nodejs: SiNodedotjs,
+  mongodb: SiMongodb,
+  mysql: SiMysql,
+  firebase: SiFirebase,
+  supabase: SiSupabase,
+  postman: SiPostman,
+
+  // Programming / AI
+  python: SiPython,
+
+  // DevOps / Infrastructure
+  docker: SiDocker,
+  kubernetes: SiKubernetes,
+
+  // Data / Analytics
+  powerbi: SiPowers,
+
+  // Design
+  figma: SiFigma,
 };
 
 export type IconLibrary = typeof iconLibrary;
+
 export type IconName = keyof IconLibrary;

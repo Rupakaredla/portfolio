@@ -1,0 +1,22 @@
+---
+title: "Building Undershell: Designing for the Moment Networks Fail"
+summary: "Lessons from building a women's safety app that has to work even when a phone has no signal and no time to spare."
+publishedAt: "2026-01-20"
+tag: "Projects"
+---
+
+Most safety apps assume you have a working internet connection and a few free seconds to open an app and tap a button. Undershell started from a different assumption: in a real emergency, neither of those things is guaranteed.
+
+## Designing around failure, not the happy path
+
+The core challenge with Undershell wasn't the SOS button — it was everything that has to work when the "normal" path doesn't. That's what led us to a signal-less SMS fallback through a GSM module, so an alert can still go out even with no mobile data available, and to voice-recognition-triggered alerts, so a user doesn't need free hands or a clear view of their screen to ask for help.
+
+## Hardware meets software
+
+Combining React Native, Node.js, Firebase, and MongoDB for the app layer with a GSM module and an ESP32 microcontroller for the hardware layer meant thinking about the product as one system, not two separate projects glued together. Every design decision on the software side had to account for what the hardware could realistically guarantee in the field.
+
+## What I've learned
+
+Building for a worst-case scenario changes how you prioritize. Reliability and graceful degradation matter more than feature breadth. That mindset has carried over into how I think about security engineering more broadly — systems should be designed assuming something will go wrong, not hoping it won't.
+
+Undershell is still an active project, and there's more to build — particularly around tightening the reliability of the voice-triggered alert path.

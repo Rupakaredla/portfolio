@@ -1,0 +1,22 @@
+---
+title: "Why PII Detection in Unstructured Data Is Harder Than It Looks"
+summary: "Notes from working on NDRA-PII, an AI-based system for detecting personally identifiable information across unstructured documents."
+publishedAt: "2026-02-25"
+tag: "AI & Security"
+---
+
+It's easy to assume detecting personally identifiable information is a solved problem — just match against a list of patterns for names, emails, and ID numbers, right? Working on NDRA-PII showed me how far that assumption breaks down once you move into real, unstructured documents.
+
+## Context is everything
+
+A string of digits might be a phone number, an account ID, or a completely irrelevant number depending on the surrounding text. Rule-based pattern matching misses this constantly. That's where semantic, NLP-driven approaches using tools like spaCy and Presidio start to matter — they let a system reason about context, not just format.
+
+## The unglamorous work that makes it possible
+
+Most of my contribution to NDRA-PII has been in dataset curation and validation — labelling data carefully, checking for consistency, and benchmarking detection accuracy across different document types. It's not the flashy part of an AI project, but it's the part that determines whether the model actually generalizes or just memorizes its training set.
+
+## Why this matters for security
+
+PII detection sits at the intersection of privacy, compliance, and risk management — three things that come up constantly in cybersecurity work. A system that can reliably flag PII in unstructured documents has real value for incident response, data governance, and breach impact assessment.
+
+There's still a lot to validate as this project continues, but it's been a strong introduction to how AI and security work practices intersect.
