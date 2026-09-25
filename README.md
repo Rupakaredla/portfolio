@@ -1,6 +1,6 @@
 # Rupa Yeshvitha Karedla — Portfolio
 
-Personal portfolio site for K. Rupa Yeshvitha, a Cybersecurity student and aspiring security analyst. Built with an MDX-based content system for projects and blog posts, an about / CV page, and a gallery.
+Personal portfolio site for K. Rupa Yeshvitha, a Cybersecurity student and aspiring security analyst. Built with an MDX-based content system for projects and blog posts and an about / CV page.
 
 ## Getting started
 
